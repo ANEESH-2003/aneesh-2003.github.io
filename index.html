@@ -111,6 +111,31 @@
         display:none;
         transition: 1.2s;
       }
+      .notification-popup {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #333;
+        color: #fff;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        font-size: 14px;
+        display: none;
+        z-index: 1000;
+      }
+
+      .notification-popup.show {
+        display: block;
+        animation: fadeInOut 3s ease-in-out;
+      }
+
+      @keyframes fadeInOut {
+        0% { opacity: 0; transform: translateY(20px); }
+        10% { opacity: 1; transform: translateY(0); }
+        90% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 0; transform: translateY(20px); }
+      }
     </style>
 
     <title>Aneesh Khunteta</title>
@@ -143,7 +168,9 @@
 </head>
 
   <body>
-
+    <div id="notification" class="notification-popup">
+      This is a notification message!
+    </div>
     <table width="840" border="0" align="center" cellspacing="0" cellpadding="20">
       <tbody>
         <tr>
@@ -268,18 +295,18 @@
               <tbody>
                 <tr>
                 <td>
-                  <button class="button blue">C</button>
-                  <button class="button blue">C++</button>
-                  <button class="button blue">Java</button>
-                  <button class="button blue">JavaScript</button>
-                  <button class="button blue">ReactJs</button>
-                  <button class="button blue">NextJs</button>
-                  <button class="button blue">ExpressJs</button>
-                  <button class="button blue">Spring Boot</button>
-                  <button class="button blue">MongoDB</button>
-                  <button class="button blue">MySQL</button>
-                  <button class="button blue">Ansible</button>
-                  <button class="button blue">Jenkins</button></td>
+                  <button class="button blue" id="skill1" onclick=btncopy(id)>C</button>
+                  <button class="button blue" id="skill2" onclick=btncopy(id)>C++</button>
+                  <button class="button blue" id="skill3" onclick=btncopy(id)>Java</button>
+                  <button class="button blue" id="skill4" onclick=btncopy(id)>JavaScript</button>
+                  <button class="button blue" id="skill5" onclick=btncopy(id)>ReactJs</button>
+                  <button class="button blue" id="skill6" onclick=btncopy(id)>NextJs</button>
+                  <button class="button blue" id="skill7" onclick=btncopy(id)>ExpressJs</button>
+                  <button class="button blue" id="skill8" onclick=btncopy(id)>Spring Boot</button>
+                  <button class="button blue" id="skill9" onclick=btncopy(id)>MongoDB</button>
+                  <button class="button blue" id="skill10" onclick=btncopy(id)>MySQL</button>
+                  <button class="button blue" id="skill11" onclick=btncopy(id)>Ansible</button>
+                  <button class="button blue" id="skill12" onclick=btncopy(id)>Jenkins</button></td>
                 </tr>
               </tbody>
             </table>

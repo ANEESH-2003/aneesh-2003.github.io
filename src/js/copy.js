@@ -1,10 +1,10 @@
 function copyText() {
-    var text = "aneeshkhunteta@gmail.com";
+    const text = "aneeshkhunteta@gmail.com";
 
     try {
       navigator.clipboard.writeText(text)
       .then(()=>{
-       // alert('Text copied to clipboard!');
+        showNotification(text)
         this.toggleColor();
     })
       .catch(()=>console.error('Could not copy text: ', err));
@@ -13,13 +13,35 @@ function copyText() {
     }
   }
 function toggleColor() {
-    var button = document.getElementById("copy-btn");
+    const button = document.getElementById("copy-btn");
     button.textContent = "\u2714 Copied";
-    if (button.classList.contains("green")) {
-        button.classList.remove("green");
-        button.classList.add("red");
-    } else {
-        button.classList.remove("red");
-        button.classList.add("green");
-    }
+    button.classList.remove("green");
+    button.classList.add("red");
+    button.disabled=true;
+    setTimeout(()=>{
+      button.textContent="Copy Email"
+      button.classList.remove("red");
+      button.classList.add("green");
+      button.disabled=false;
+    },3000)
+  }
+
+function btncopy(id) {
+    const button = document.getElementById(id);
+    const text = button.innerText;
+    navigator.clipboard.writeText(text)
+    .then(showNotification(text));
+  }
+let notificationTimeout;
+function showNotification(text) {
+    const notification = document.getElementById('notification');
+    clearTimeout(notificationTimeout);
+    notification.classList.remove('show');
+    setTimeout(()=>{
+      notification.innerText="Copied text : " + text;
+      notification.classList.add('show');
+    },10);
+    notificationTimeout = setTimeout(() => {
+      notification.classList.remove('show');
+    }, 3000);
   }
