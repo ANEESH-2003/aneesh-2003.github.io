@@ -1,4 +1,3 @@
-
 function scrambledString(tag, objName, initScrambledString, initScrambledStringIndices) {
 	this.tag = tag;
 	this.objName = objName;

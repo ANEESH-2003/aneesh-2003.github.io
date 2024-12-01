@@ -1,144 +1,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="./src/css/main.css" rel="stylesheet">
-    <style type="text/css">
-      a {
-        color: #1772d0;
-        text-decoration:none;
-      }
-      a:focus, a:hover {
-        color: #f09228;
-        text-decoration:none;
-      }
-      body,td,th {
-        font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-        font-size: 16px;
-        font-weight: 400
-      }
-      heading {
-        font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-        font-size: 19px;
-        font-weight: 1000
-      }
-      strong {
-        font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-        font-size: 16px;
-        font-weight: 800
-      }
-      strongred {
-        font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-        color: 'red' ;
-        font-size: 16px
-      }
-      sectionheading {
-        font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-        font-size: 22px;
-        font-weight: 600
-      }
-      subheading {
-        font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-        font-size: 18px;
-        font-weight: 600
-      }
-      #cscourses1 {
-        margin-bottom: 0px;
-      }
-      #cscourses2 {
-        margin-top: 0px;
-      }
-      #mooc td {
-        width: 50%;
-      }
-      .tgl input[type=checkbox] {
-          box-sizing: border-box;
-          visibility: hidden;
-          height: inherit;
-          display: none;
-      }
-      .button {
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 10px;
-      }
-      .blue {
-        background-color: #1E5162;
-        margin-bottom: 5px;
-      }
-      .green {
-        background-color: green;
-      }
-      .red {
-        background-color: 90EE90;
-      }
-      label.tggl {
-          box-sizing: border-box;
-          display: flex;
-          width: 48px;
-          height: 23px;
-          border: 4px solid;
-          border-radius: 99em;
-          position: relative;
-          transition: transform 0.75s ease-in-out;
-          transform-origin: 50% 50%;
-          cursor: pointer;
-      }
-      label.tggl:before {
-          transition: transform 0.75s ease;
-          transition-delay: 0.5s;
-          content: "";
-          display: block;
-          position: absolute;
-          width: 11px;
-          height: 11px;
-          background-color: #000;
-          border-radius: 50%;
-          top: 2px;
-          left: 3px;
-      }
-      .tgl input[type=checkbox]:checked + label {
-          transform: rotate(360deg);
-          background-color: #000;
-      }
-      .tgl input[type=checkbox]:checked + label:before {
-          box-sizing: border-box;
-          transform: translateX(24px);
-          background-color: #fff;
-      }
-      .hidden {
-        display:none;
-        transition: 1.2s;
-      }
-      .notification-popup {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #333;
-        color: #fff;
-        padding: 15px 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        font-size: 14px;
-        display: none;
-        z-index: 1000;
-      }
-
-      .notification-popup.show {
-        display: block;
-        animation: fadeInOut 3s ease-in-out;
-      }
-
-      @keyframes fadeInOut {
-        0% { opacity: 0; transform: translateY(20px); }
-        10% { opacity: 1; transform: translateY(0); }
-        90% { opacity: 1; transform: translateY(0); }
-        100% { opacity: 0; transform: translateY(20px); }
-      }
-    </style>
-
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="./src/css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./src/css/stylesheet.css">
     <title>Aneesh Khunteta | Software engineer</title>
+    <link rel="icon" href="./src/images/favicon.ico" type="image/x-icon">
+    <meta name="Aneesh Khunteta's Github Homepage" http-equiv="Content-Type" content="Aneesh Khunteta's Github Homepage">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Aneesh Khunteta">
+    <meta name="description" content="Portfolio of Aneesh Khunteta, a software engineer specializing in full-stack development and scalable web solutions.">
+    <script src="./src/js/scramble.js"></script>
+    <script src="./src/js/toggleBlock.js"></script>
+    <script src="./src/js/copy.js"></script>
+    <script src="./src/js/script.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZEFLXEMY4"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -146,238 +21,15 @@
       gtag('js', new Date());
       gtag('config', 'G-7ZEFLXEMY4');
     </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Aneesh Khunteta",
-        "jobTitle": "Software Engineer",
-        "alternateName": "Aneesh Khunteta",
-        "url": "https://aneesh-2003.github.io/",
-        "sameAs": [
-          "https://github.com/ANEESH-2003",
-          "https://www.linkedin.com/in/aneesh-khunteta/",
-          "https://codeforces.com/profile/AI47",
-          "https://leetcode.com/aneesh_47/",
-          "https://www.codechef.com/users/aneesh_47"
-        ],
-        "knowsAbout": [
-          "Web Development",
-          "Backend Systems",
-          "Full Stack Development",
-          "Scalable Applications",
-          "Frontend Development"
-        ],
-        "skills": [
-          "JavaScript",
-          "React",
-          "Node.js",
-          "Java",
-          "ExpressJs",
-          "SQL",
-          "MongoDB",
-          "Git",
-          "Agile Development",
-          "API Design",
-          "SpringBoot"
-        ],
-        "award": [
-          "Won Codechef August cook-off 2021 by global rank 14",
-          "Got Global Rank of 307 in Codeforces Round",
-          "Got Global Rank of 751 in Google kickstart 2022",
-          "Got Global Rank of 661 in Codeforces Round 817",
-          "Got Global Rank of 613 in Leetcode Biweekly 96"
-        ],
-        "gender": "Male",
-        "email": "aneeshkhunteta@gmail.com",
-        "image": "./src/images/dp1.jpeg",
-        "description": "Aneesh Khunteta is a Software Engineer specializing in full-stack development and scalable web applications.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Bengaluru",
-          "addressRegion": "Karnataka",
-          "postalCode": "560102"
-        },
-        "hasOccupation": {
-          "@type": "Occupation",
-          "name": "Software Engineer",
-          "occupationalCategory": "15-1132.00",
-          "description": "Designs, develops, and maintains scalable web applications and backend systems."
-        },
-        "hasCredential": [
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Object-Oriented Data Structures in C++",
-            "description": "Object-Oriented Data Structures in C++",
-            "url": "https://www.coursera.org/account/accomplishments/verify/VQDEVWZQPJVB",
-            "issuer": {
-              "@type": "Organization",
-              "name": "University of Illinois Urbana-Champaign",
-              "url": "https://illinois.edu/"
-            },
-            "dateIssued": "2022-06-20"
-          },
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming",
-            "description": "Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming",
-            "url": "https://www.coursera.org/account/accomplishments/certificate/H7952YH8XLCK",
-            "issuer": {
-              "@type": "Organization",
-              "name": "Stanford University",
-              "url": "https://www.stanford.edu/"
-            },
-            "dateIssued": "2022-06-29"
-          },
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Divide and Conquer, Sorting and Searching, and Randomized Algorithms",
-            "description": "Divide and Conquer, Sorting and Searching, and Randomized Algorithms",
-            "url": "https://www.coursera.org/account/accomplishments/verify/2DHYRMN2NAWT",
-            "issuer": {
-              "@type": "Organization",
-              "name": "Stanford University",
-              "url": "https://www.stanford.edu/"
-            },
-            "dateIssued": "2022-06-29"
-          },
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Unordered Data Structures",
-            "description": "Unordered Data Structures",
-            "url": "https://www.coursera.org/account/accomplishments/verify/9EB9E9TEDYDE",
-            "issuer": {
-              "@type": "Organization",
-              "name": "University of Illinois Urbana-Champaign",
-              "url": "https://illinois.edu/"
-            },
-            "dateIssued": "2023-01-30"
-          },
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Ordered Data Structures",
-            "description": "Ordered Data Structures",
-            "url": "https://www.coursera.org/account/accomplishments/verify/QWV6NCA4ARG4",
-            "issuer": {
-              "@type": "Organization",
-              "name": "University of Illinois Urbana-Champaign",
-              "url": "https://illinois.edu/"
-            },
-            "dateIssued": "2023-01-30"
-          },
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Mathematics for Machine Learning: PCA",
-            "description": "Mathematics for Machine Learning: PCA",
-            "url": "https://www.coursera.org/account/accomplishments/verify/MXJUJMQP2XBD",
-            "issuer": {
-              "@type": "Organization",
-              "name": "Imperial College London",
-              "url": "https://www.imperial.ac.uk/"
-            },
-            "dateIssued": "2023-02-01"
-          },
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Mathematics for Machine Learning: Multivariate Calculus",
-            "description": "Mathematics for Machine Learning: Multivariate Calculus",
-            "url": "https://www.coursera.org/account/accomplishments/verify/82WTKUSSVCWL",
-            "issuer": {
-              "@type": "Organization",
-              "name": "Imperial College London",
-              "url": "https://www.imperial.ac.uk/"
-            },
-            "dateIssued": "2023-01-15"
-          },
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Mathematics for Machine Learning: Linear Algebra",
-            "description": "Mathematics for Machine Learning: Linear Algebra",
-            "url": "https://www.coursera.org/account/accomplishments/verify/GT44TD2EGTSB",
-            "issuer": {
-              "@type": "Organization",
-              "name": "Imperial College London",
-              "url": "https://www.imperial.ac.uk/"
-            },
-            "dateIssued": "2023-01-04"
-          },
-        ],
-        "knowsLanguage": [
-          {
-            "@type": "Language",
-            "name": "English",
-            "alternateName": "en"
-          },
-          {
-            "@type": "Language",
-            "name": "Hindi",
-            "alternateName": "hi"
-          }
-        ],
-        "alumniOf": {
-          "@type": "EducationalOrganization",
-          "name": "LNM Institute of Information Technology"
-        },
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Whatfix"
-        },
-        "project": [
-          {
-            "@type": "CreativeWork",
-            "name": "Document Approval Tracker",
-            "description": "This system help in posting application and attach its documents.",
-            "url": "https://github.com/ANEESH-2003/document-approval-tracker"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Maintenance Automation System",
-            "description": "This system is designed for LNMIIT campus complaints managaement.",
-            "url": "https://github.com/ANEESH-2003/Maintenance-Automation-system"
-          }
-        ]
-      }
-    </script>
-    <script>
-      function extracurricularClick(checkbox) {
-        var acads = document.querySelectorAll(".acads");
-        var extra = document.querySelectorAll(".extra");
-        if (checkbox.checked == true) {
-            acads.forEach(x => x.classList.add("hidden"));
-            extra.forEach(x => x.classList.remove("hidden"));
-        } else {
-            acads.forEach(x => x.classList.remove("hidden"));
-            extra.forEach(x => x.classList.add("hidden"));
-        }
-      }
-    </script>
-    <link rel="icon" href="./src/images/favicon.ico" type="image/x-icon">
-    <meta name="Aneesh Khunteta's Github Homepage" http-equiv="Content-Type" content="Aneesh Khunteta's Github Homepage">
-    <meta name="description" content="Portfolio of Aneesh Khunteta, a software engineer specializing in full-stack development and scalable web solutions.">
-    <script src="./src/js/scramble.js"></script>
-    <script src="./src/js/toggleBlock.js"></script>
-    <script src="./src/js/copy.js"></script>
-</head>
+  </head>
 
   <body>
     <!-- SEO Stuff -->
     <h1 class="hidden">Aneesh Khunteta</h1>
-    <h1 class="hidden">Software engineer</h1>
-    <h2 class="hidden">Full Stack engineer</h1>
-    <h2 class="hidden">Developer</h1>
-    <h2 class="hidden">Whatfix</h1>
-    <h3 class="hidden">C</h3>
-    <h3 class="hidden">C++</h3>
-    <h3 class="hidden">Java</h3>
-    <h3 class="hidden">JavaScript</h3>
-    <h3 class="hidden">ReactJs</h3>
-    <h3 class="hidden">NextJs</h3>
-    <h3 class="hidden">ExpressJs</h3>
-    <h3 class="hidden">Spring Boot</h3>
-    <h3 class="hidden">MongoDB</h3>
-    <h3 class="hidden">MySQL</h3>
-    <h3 class="hidden">Ansible</h3>
-    <h3 class="hidden">Jenkins</h3>
+    <h2 class="hidden">Software engineer</h2>
+    <h2 class="hidden">Full Stack engineer</h2>
+    <h2 class="hidden">Developer</h2>
+    <h2 class="hidden">Whatfix</h2>
     <!-- SEO Stuff -->
     <div id="notification" class="notification-popup">
       This is a notification message!
@@ -453,6 +105,7 @@
                     <p></p>
                     <div style="display: inline-block;margin-left: 35px;">Extracurricular</div>
                     <div class="tgl" height="10px" style="display: inline-block;margin-left: 6px;/* margin-top: 2px; */vertical-align: inherit;">
+                      <div class="hover-text">Shortcut: [</div>
                       <input type="checkbox" onchange='extracurricularClick(this);' id="toggle" style="/* display: inline-block; *//* margin-top: 40px; */">
                       <label class="tggl" for="toggle" style="display: inline-block;/* margin-top: 2px; *//* padding-top: 19px; */"></label>
                     </div>
@@ -536,7 +189,7 @@
             <table class="acads" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tbody><tr>
                 <td width="33%" valign="top" align="center">
-                  <a href="./src/images/doc.jpg" target="_blank"><img src="./src/images/doc.jpg" alt="sym" width="100%" style="border-style: none"></a>
+                  <a href="./src/images/doc.jpg" target="_blank"><img src="./src/images/doc.jpg" alt="Document" width="100%" style="border-style: none"></a>
                 </td>
                 <td width="67%" valign="top">
                   <p>
@@ -572,7 +225,7 @@
             <table class="acads" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tbody><tr>
                 <td width="33%" valign="top" align="center">
-                  <a href="./src/images/feminism.jpg" target="_blank"><img src="./src/images/feminism.jpg" alt="sym" width="100%" style="border-style: none"></a>
+                  <a href="./src/images/feminism.jpg" target="_blank"><img src="./src/images/feminism.jpg" alt="Feminism" width="100%" style="border-style: none"></a>
                 </td>
                 <td width="67%" valign="top">
                   <p>
@@ -603,7 +256,7 @@
             <table class="acads" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tbody><tr>
                 <td width="33%" valign="top" align="center">
-                  <a href="./src/images/pro.png" target="_blank"><img src="./src/images/pro.png" alt="sym" width="100%" style="border-style: none"></a>
+                  <a href="./src/images/pro.png" target="_blank"><img src="./src/images/pro.png" alt="maintenance" width="100%" style="border-style: none"></a>
                 </td>
                 <td width="67%" valign="top">
                   <p>
@@ -642,7 +295,7 @@
             <table class="acads" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tbody><tr>
                 <td width="33%" valign="top" align="center">
-                  <a href="./src/images/nlp.jpg" target="_blank"><img src="./src/images/nlp.jpg" alt="sym" width="100%" style="border-style: none"></a>
+                  <a href="./src/images/nlp.jpg" target="_blank"><img src="./src/images/nlp.jpg" alt="nlp" width="100%" style="border-style: none"></a>
                 </td>
                 <td width="67%" valign="top">
                   <p>
@@ -674,7 +327,7 @@
             <table class="acads" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tbody><tr>
                 <td width="33%" valign="top" align="center">
-                  <a href="./src/images/gender.jpg" target="_blank"><img src="./src/images/gender.jpg" alt="sym" width="100%" style="border-style: none"></a>
+                  <a href="./src/images/gender.jpg" target="_blank"><img src="./src/images/gender.jpg" alt="gender" width="100%" style="border-style: none"></a>
                 </td>
                 <td width="67%" valign="top">
                   <p>
@@ -753,7 +406,7 @@
             <table class="extra hidden" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tbody><tr>
                 <td width="33%" valign="top" align="center">
-                  <a href="./src/images/football.jpeg" target="_blank"><img src="./src/images/football.jpeg" alt="sym" width="100%" style="border-style: none"></a>
+                  <a href="./src/images/football.jpeg" target="_blank"><img src="./src/images/football.jpeg" alt="football" width="100%" style="border-style: none"></a>
                 </td>
                 <td width="67%" valign="top">
                   <p>
@@ -769,7 +422,7 @@
             <table class="extra hidden" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tbody><tr>
                 <td width="33%" valign="top" align="center">
-                  <a href="./src/images/cat.jpg" target="_blank"><img src="./src/images/cat.jpg" alt="sym" width="100%" style="border-style: none"></a>
+                  <a href="./src/images/cat.jpg" target="_blank"><img src="./src/images/cat.jpg" alt="cat" width="100%" style="border-style: none"></a>
                 </td>
                 <td width="67%" valign="top">
                   <p>
@@ -784,7 +437,7 @@
             <table class="extra hidden" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tbody><tr>
                 <td width="33%" valign="top" align="center">
-                  <a href="./src/images/book.jpg" target="_blank"><img src="./src/images/book.jpg" alt="sym" width="100%" style="border-style: none"></a>
+                  <a href="./src/images/book.jpg" target="_blank"><img src="./src/images/book.jpg" alt="books" width="100%" style="border-style: none"></a>
                 </td>
                 <td width="67%" valign="top">
                   <p>
@@ -799,7 +452,7 @@
             <table class="extra hidden" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tbody><tr>
                 <td width="33%" valign="top" align="center">
-                  <a href="./src/images/guitar.jpeg" target="_blank"><img src="./src/images/guitar.jpeg" alt="sym" width="100%" style="border-style: none"></a>
+                  <a href="./src/images/guitar.jpeg" target="_blank"><img src="./src/images/guitar.jpeg" alt="guitar" width="100%" style="border-style: none"></a>
                 </td>
                 <td width="67%" valign="top">
                   <p>
@@ -815,7 +468,7 @@
             <table class="extra hidden" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tbody><tr>
                 <td width="33%" valign="top" align="center">
-                  <a href="./src/images/mic.jpg" target="_blank"><img src="./src/images/mic.jpg" alt="sym" width="100%" style="border-style: none"></a>
+                  <a href="./src/images/mic.jpg" target="_blank"><img src="./src/images/mic.jpg" alt="mic" width="100%" style="border-style: none"></a>
                 </td>
                 <td width="67%" valign="top">
                   <p>

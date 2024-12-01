@@ -1,0 +1,158 @@
+.center-alignment {
+  text-align: center;
+}
+.heading-name {
+  font-size: 3rem;
+}
+a {
+  color: #1772d0;
+  text-decoration:none;
+}
+a:focus, a:hover {
+  color: #f09228;
+  text-decoration:none;
+}
+body,td,th {
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400
+}
+heading {
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 1000
+}
+strong {
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 800
+}
+strongred {
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  color: 'red' ;
+  font-size: 16px
+}
+sectionheading {
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 600
+}
+subheading {
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600
+}
+#cscourses1 {
+  margin-bottom: 0px;
+}
+#cscourses2 {
+  margin-top: 0px;
+}
+#mooc td {
+  width: 50%;
+}
+.tgl input[type=checkbox] {
+  box-sizing: border-box;
+  visibility: hidden;
+  height: inherit;
+  display: none;
+}
+.button {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.blue {
+  background-color: #1E5162;
+  margin-bottom: 5px;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: 90EE90;
+}
+label.tggl {
+  box-sizing: border-box;
+  display: flex;
+  width: 48px;
+  height: 23px;
+  border: 4px solid;
+  border-radius: 99em;
+  position: relative;
+  transition: transform 0.75s ease-in-out;
+  transform-origin: 50% 50%;
+  cursor: pointer;
+}
+label.tggl:before {
+  transition: transform 0.75s ease;
+  transition-delay: 0.5s;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 2px;
+  left: 3px;
+}
+.tgl input[type=checkbox]:checked + label {
+  transform: rotate(360deg);
+  background-color: #000;
+}
+.tgl input[type=checkbox]:checked + label:before {
+  box-sizing: border-box;
+  transform: translateX(24px);
+  background-color: #fff;
+}
+.hidden {
+  display:none;
+  transition: 1.2s;
+}
+.notification-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  display: none;
+  z-index: 1000;
+}
+.hover-text {
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 41%;
+  left: 73%;
+  transform: translateX(-50%);
+  z-index: 1;
+  /* Add fade-in effect */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tgl:hover .hover-text {
+  visibility: visible;
+  opacity: 1;
+}
+.notification-popup.show {
+  display: block;
+  animation: fadeInOut 3s ease-in-out;
+}
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(20px); }
+}
