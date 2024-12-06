@@ -126,26 +126,6 @@ label.tggl:before {
   display: none;
   z-index: 1000;
 }
-/* .hover-text {
-  visibility: hidden;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1.2px 10px;
-  border-radius: 50px;
-  position: absolute;
-  bottom: 37.5%;
-  left: 76%;
-  transform: translateX(-50%);
-  z-index: 1;
-  /* Add fade-in effect */
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-.tgl:hover .hover-text {
-  visibility: visible;
-  opacity: 1;
-} */
 .notification-popup.show {
   display: block;
   animation: fadeInOut 3s ease-in-out;
